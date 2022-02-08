@@ -1,0 +1,36 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "David",
+    "Apellido_1": "Franco",
+    "Apellido_2": "Ospina",
+    "correo": "davidfranco9265@gmail.com",
+    "telefono": null,
+    "celular": 3206345448,
+    "direccion": "calle 2 carrera 1 no 14"
+}
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "IdPais": 2,
+    "nombre_Pais": "Chile" 
+}
+
+###
+DELETE http://localhost:9000/api/2 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre_Pais": "Venezuela" 
+}
